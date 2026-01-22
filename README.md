@@ -1,77 +1,62 @@
-# Test Cases Samples
-Below there are some Test Cases that I used on previous projects.
+# QA documentation
+The most important rule to write clean documentation is that someone else must be able to understand. Below are some examples of test case, bug report..
 
 -----------
+## Test case
+Test Case ID: TC-LOGIN-001
 
-**Test Title** :
-Login with right credentials
+Title: User can log in with valid credentials
 
-**Description**:
-Check if the login button works with the right credentials.
+**Preconditions:**
+- User has an active account
+- User is on the login page
 
-**Steps to reproduce**:
-1. Access the website: https://www.website.com
-2. Add a correct user/password
-3. Press Login button
+**Steps:**
+1. Enter valid email in the Email field
+2. Enter valid password in the Password field
+3. Click the Login button
 
-**Expected result**:
-User should be able to login and taken to his profile page.
+**Test Data:**
+- Email: user@test.com
+- Password: ValidPassword123
 
-**Test data**:
-user: user1 & password: 123456
-
------------
-
-**Test title**:
-Login with wrong credentials
-
-**Description**:
-Check if the login button works with wrong credentials.
-
-**Steps to reproduce**:
-1. Access the website https://www.website.com
-2. Add wrong user and password
-3. Press login button
-   
-**Expected result**:
-User should not be able to login into his account.
-
------------
-
-**Test title**: Verify Forgot Password functionability and reset password
-
-**Description**: Check if "forgot password" works properly and allows user to reset password using email address.
-
-**Precondition**:
-1.User have a valid account and email address registeres with the application.
-2.User knows the registred email address.
-
-**Steps to reproduce**
-
-1. Go to the website https://website.com
-2. Click on login button
-3. Click on forgot password
-4. Enter registered email address
-5. Click an "Send Link" button
-6. Check email inbox or spam if link not found in inbox.
-7. Click on reset password
-8. Enter new password
-9. Submit new password
-10. Verify if message succes reset is printed.
-11.Login with new password.
-
-**Expected results**
-
-1. A succes message should be printed after the email has been introduced.
-2. User should receive an email with a link to reset password.
-3. The password reset link should redirect user to a page for changing password. 
-4. User should be able to reset password and login using new password.
-
-
-**Test data**
-1. Registered email address: 'user@example.com'
-2. New password: 'newpass2024'
-
+**Expected Result:**
+- User is redirected to the dashboard
+- Dashboard username is displayed
 
 
 ---------------
+
+## Bug report
+Bug ID: BUG-LOGIN-004
+
+Title: Login button inactive after entering valid credentials
+
+**Environment:**
+- Web app
+- Chrome v120
+- Windows 10
+
+**Steps to Reproduce:**
+1. Open the login page
+2. Enter valid username and password
+3. Observe the Login button
+
+**Expected Result:**
+- Login button should be clickable
+
+**Actual Result:**
+- Login button remains inactive
+
+**Severity:**
+- High
+
+**Priority:**
+- High
+
+**Attachments:**
+- Screenshot attached
+
+**Notes:**
+- Issue occurs consistently
+
