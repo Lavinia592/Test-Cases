@@ -1,5 +1,5 @@
 # QA documentation
-The most important rule to write clean documentation is that someone else must be able to understand. Below are some examples of test case, bug report..
+The most important rule to write clean documentation is that someone else must be able to understand. Below are some examples of a test case and a bug report.
 
 -----------
 ## Test case
